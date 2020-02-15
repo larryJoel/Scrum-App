@@ -19,9 +19,9 @@ app.get('/', (req, res) =>{
   res.render('home',{
     nombre:'larry González'});
 });
-  app.get('/about', (req, res) =>{
+  app.get('/principios', (req, res) =>{
 
-    res.render('about',{
+    res.render('principios',{
       heroe:'Batman'});
   
 });
