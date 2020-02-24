@@ -1,13 +1,11 @@
 const express = require('express');
 const app = express();
 const hbs = require('hbs');
-// require ('./hbs/helpers');
+require ('./hbs/helpers');
 
 const port = process.env.PORT || 3000;
 
 app.use(express.static(__dirname + '/public'));
-
-
 
 
 // express hbs
@@ -19,10 +17,12 @@ app.get('/', (req, res) =>{
   res.render('home',{
     nombre:'larry González'});
 });
-  app.get('/principios', (req, res) =>{
 
-    res.render('principios',{
-      heroe:'Batman'});
+
+  app.get('/pilares', (req, res) =>{
+
+    res.render('pilares',{
+      nombre:'larry González'});
   
 });
 
