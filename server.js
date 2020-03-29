@@ -37,6 +37,18 @@ app.get('/', (req, res) =>{
   app.get('/ceremonias',(req,res) =>{
     res.render('ceremonias');
   });
+
+  app.get('/roles',(req,res) =>{
+    res.render('roles');
+  });
+
+  app.get('/artefactos',(req,res) =>{
+    res.render('artefactos');
+  });
+
+  app.get('/whois',(req,res) =>{
+    res.render('whois');
+  });
     
 
 app.listen(port,()=>{
