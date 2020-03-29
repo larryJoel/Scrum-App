@@ -14,17 +14,30 @@ app.set('view engine', 'hbs');
 
 app.get('/', (req, res) =>{
 
-  res.render('home',{
-    nombre:'larry González'});
+  res.render('home');
 });
 
 
   app.get('/pilares', (req, res) =>{
 
-    res.render('pilares',{
-      nombre:'larry González'});
+    res.render('pilares');
   
 });
+
+  app.get('/valores',(req,res) =>{
+
+    res.render('valores');
+    });
+
+  app.get('/elementos',(req,res) =>{
+
+    res.render('elementos');
+    });
+  
+  app.get('/ceremonias',(req,res) =>{
+    res.render('ceremonias');
+  });
+    
 
 app.listen(port,()=>{
     console.log(`El puerto ${ port } se esta escuchando`)
